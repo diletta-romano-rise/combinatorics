@@ -19,9 +19,8 @@ This repository contains code and experiments about an empirical phenomenon (and
 ## TL;DR
 
 Define
-
 $$
-f(k,n,s)=\#\{\,A\subseteq\{0,1,\dots,n\}\;:\;|A|=k,\ \sum_{a\in A}a=s\,\},
+f(k,n,s)=\bigl|\{\,A\subseteq\{0,1,\dots,n\} : |A|=k,\ \sum_{a\in A} a = s\,\}\bigr|.
 $$
 
 i.e., the number of **k-element subsets (no repetitions)** of $\{0,1,\dots,n\}$ with sum $s$.
@@ -96,13 +95,13 @@ The peak locations follow a deterministic shift rule when moving from $n$ to $n+
 
 Empirically, the number of peaks depends only on $k$ and follows:
 
-```python
-def num_peaks(k: int) -> int:
-    temp = int(np.floor(k/2))
-    if k % 2 == 0:
-        return temp*2 - 1
-    else:
-        return temp*2
+ $$
+P(k)=
+\begin{cases}
+2\left\lfloor \dfrac{k}{2}\right\rfloor - 1, & \text{if \(k\) is even},\\
+2\left\lfloor \dfrac{k}{2}\right\rfloor, & \text{if \(k\) is odd}.
+\end{cases}
+$$
 ### Peak shapes
 
 Empirically, the peak shapes match (up to translation) the distributions for subset sizes
