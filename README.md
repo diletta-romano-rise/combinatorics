@@ -19,6 +19,7 @@ This repository contains code and experiments about an empirical phenomenon (and
 ## TL;DR
 
 Define
+
 $$
 f(k,n,s)=\bigl|\{\,A\subseteq\{0,1,\dots,n\} : |A|=k,\ \sum_{a\in A} a = s\,\}\bigr|.
 $$
