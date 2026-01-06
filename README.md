@@ -1,3 +1,9 @@
+## NB
+Take a look at the Mathematics Stack Exchange post!  Some really nice insight there! **matrix reformulation of the problem and connection with q-Pochhammers**
+
+https://math.stackexchange.com/q/5118006/1728663
+
+
 ## Note (PDF typo)
 
 In the PDF there is an error in the definition of when the transient phase ends: I forgot to add **+ (k-1)**.
